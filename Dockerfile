@@ -1,5 +1,5 @@
 FROM openjdk:17-alpine
 WORKDIR /app
-COPY target/*.jar app.jar
+COPY target/student-app-1.0.jar app.jar
 EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
